@@ -1,5 +1,5 @@
 "use client";
-const ErrorPage = () => {
+const ErrorPage = ({ error, reset }: { error: Error; reset: () => void }) => {
   return (
     <div>
       <h1 className=" text-center pt-10 text-5xl  ">

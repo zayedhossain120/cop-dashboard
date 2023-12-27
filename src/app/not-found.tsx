@@ -1,9 +1,12 @@
+import OhSorry from "@/components/shared/OhSorry";
 import React from "react";
 
 const NotFound = () => {
   return (
     <div>
-      <h1 className=" text-center pt-10 text-5xl  ">404 are miah nai ata</h1>
+      {/* <h1 className=" text-center text-5xl  ">404 | Page not found</h1> */}
+
+      <OhSorry />
     </div>
   );
 };
