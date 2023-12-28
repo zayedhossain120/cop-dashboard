@@ -5,6 +5,7 @@ const Dashboard = () => {
   return (
     <section>
       <div>
+        <h3 className="text-2xl font-bold text-textColor">Dashboard</h3>
         <div>
           <InvestorDetails />
         </div>

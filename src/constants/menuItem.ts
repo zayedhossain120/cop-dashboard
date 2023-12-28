@@ -27,4 +27,10 @@ export const menuItems = [
     href: "/investment",
     // icon: MembersIcon,
   },
+  {
+    label: "Statement",
+    key: "statement",
+    href: "/statement",
+    // icon: MembersIcon,
+  },
 ];

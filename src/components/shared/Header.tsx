@@ -27,7 +27,7 @@ const Header = () => {
           </nav>
         ))}
       </div>
-      <button className="btn btn-circle">
+      <button className="btn btn-circle ">
         <LogoutIcon />
       </button>
     </header>
