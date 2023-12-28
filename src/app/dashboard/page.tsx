@@ -1,7 +1,17 @@
+import InvestorDetails from "@/components/UI/InvestorDetails";
 import React from "react";
 
 const Dashboard = () => {
-  return <div>This is Dashboard page</div>;
+  return (
+    <section>
+      <div>
+        <div>
+          <InvestorDetails />
+        </div>
+        <div></div>
+      </div>
+    </section>
+  );
 };
 
 export default Dashboard;

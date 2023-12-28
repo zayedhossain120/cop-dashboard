@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(234, 233, 241);
+  max-width: 1260px !important;
+  margin: auto !important;
 }

@@ -9,10 +9,13 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      primary: "#fa254a",
-      secondary: "#fa864a",
+      primary: "#5843BE",
+      secondary: "#0EBE7E",
+      textColor: "rgba(0, 0, 0, 0.70)",
       customColor: {
-        100: "#af24d1",
+        50: "rgba(0, 0, 0, 0.50)",
+        90: "rgba(0, 0, 0, 0.90)",
+        100: "#ECE9FF",
         500: "#cf4551",
         700: "#df7f21",
       },

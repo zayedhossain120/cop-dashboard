@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const OhSorry = () => {
@@ -20,9 +21,12 @@ const OhSorry = () => {
               of other things on our homepage.
             </p>
 
-            <button className="inline px-4 py-2 text-sm font-medium leading-5 text-white uppercase transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue active:bg-blue-600 hover:bg-blue-700">
+            <Link
+              href="/"
+              className="inline px-4 py-2 text-sm font-medium leading-5 text-white uppercase transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue active:bg-blue-600 hover:bg-blue-700"
+            >
               Back to Homepage
-            </button>
+            </Link>
           </div>
 
           <div className="max-w-lg"></div>
