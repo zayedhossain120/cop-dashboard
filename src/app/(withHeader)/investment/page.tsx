@@ -1,3 +1,4 @@
+import InvestedProject from "@/components/InvestedProject";
 import PageHeader from "@/components/shared/PageHeader";
 import React from "react";
 
@@ -8,6 +9,7 @@ const Investment = () => {
         decription="All of the investment is showing here"
         title="Invesment"
       />
+      <InvestedProject />
     </section>
   );
 };

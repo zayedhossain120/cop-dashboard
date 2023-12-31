@@ -4,7 +4,7 @@ import React from "react";
 
 const Members = () => {
   return (
-    <section>
+    <section className="w-full">
       <PageHeader
         decription="Here all of the members who joined to the organization"
         title="Members"

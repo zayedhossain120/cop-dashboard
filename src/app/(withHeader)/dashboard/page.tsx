@@ -11,7 +11,7 @@ import React from "react";
 
 const Dashboard = () => {
   return (
-    <section>
+    <section className="">
       <PageHeader
         decription="
         "

@@ -5,7 +5,7 @@ import MembersCard from "./smallCard/MembersCard";
 
 const AllMembers = () => {
   return (
-    <div className="flex items-center justify-center gap-4">
+    <div className="card-responsive-style mt-4">
       {membersData.map((data: IMembersDataProps) => (
         <MembersCard key={data?._id} data={data} />
       ))}
