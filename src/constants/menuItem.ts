@@ -30,7 +30,7 @@ export const menuItems = [
   {
     label: "Statement",
     key: "statement",
-    href: "/statement",
+    href: "/statement/diposit",
     // icon: MembersIcon,
   },
 ];

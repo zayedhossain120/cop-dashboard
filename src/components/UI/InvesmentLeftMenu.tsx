@@ -3,9 +3,12 @@ import React from "react";
 
 const InvesmentLeftMenu = () => {
   return (
-    <div>
-      <Link href="/statement/diposit">Home Link added</Link>
-    </div>
+    <aside className="flex justify-center items-center flex-col">
+      <Link href="/statement/diposit">Diposit</Link>
+      <Link href="/statement/expenses">Expense</Link>
+      <Link href="/statement/withdraw">Withdraw</Link>
+      <Link href="/statement/profit">Profit</Link>
+    </aside>
   );
 };
 
