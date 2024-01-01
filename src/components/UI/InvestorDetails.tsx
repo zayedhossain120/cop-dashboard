@@ -3,7 +3,7 @@ import TelePhoneIcon from "../svgIcons/TelePhoneIcon";
 
 const InvestorDetails = () => {
   return (
-    <section className=" shadow-lg w-full p-4 rounded-lg ">
+    <section className=" shadow-lg p-4 rounded-lg h-[75vh] ">
       <div className="flex items-center justify-between mb-6">
         <img
           className="rounded-lg"

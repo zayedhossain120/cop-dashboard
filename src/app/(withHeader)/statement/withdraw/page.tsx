@@ -1,13 +1,15 @@
 import DipositTable from "@/components/forStatement/DipositTable";
+import WithdrawTable from "@/components/forStatement/WithdrawTable";
+import React from "react";
 
-const Diposit = () => {
+const Withdraw = () => {
   return (
     <div className="h-[90vh] ">
       <div className="overflow-auto h-[500px] px-4">
-        <DipositTable />
+        <WithdrawTable />
       </div>
     </div>
   );
 };
 
-export default Diposit;
+export default Withdraw;

@@ -1,7 +1,3 @@
-"use client";
-
-import MembersIcon from "@/components/svgIcons/MembersIcon";
-
 export const menuItems = [
   {
     label: "Dashboard",

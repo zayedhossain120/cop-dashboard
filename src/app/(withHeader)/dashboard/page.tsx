@@ -11,7 +11,7 @@ import React from "react";
 
 const Dashboard = () => {
   return (
-    <section className="">
+    <section className="h-[90vh] ">
       <PageHeader
         decription="
         "
@@ -19,7 +19,7 @@ const Dashboard = () => {
       />
 
       <div className="flex justify-start item-center gap-4 ">
-        <div className="w-[485px]">
+        <div className="w-[485px] h-[100%]">
           <InvestorDetails />
         </div>
         <div className="flex item-center justify-start flex-col w-full">

@@ -1,13 +1,15 @@
 import DipositTable from "@/components/forStatement/DipositTable";
+import ProfitTable from "@/components/forStatement/ProfitTable";
+import React from "react";
 
-const Diposit = () => {
+const Profit = () => {
   return (
     <div className="h-[90vh] ">
       <div className="overflow-auto h-[500px] px-4">
-        <DipositTable />
+        <ProfitTable />
       </div>
     </div>
   );
 };
 
-export default Diposit;
+export default Profit;
