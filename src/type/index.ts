@@ -22,6 +22,7 @@ export interface IInvestedProjusesDataProps {
   investedAmount: number;
   investors: Investor[];
   registered: string;
+  isActive: boolean;
 }
 
 // header menu type declaration

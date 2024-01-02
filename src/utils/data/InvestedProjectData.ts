@@ -5,6 +5,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/139399/bull-landscape-nature-mammal-139399.jpeg?auto=compress&cs=tinysrgb&w=600",
     cawInvestment: "Investment #2",
     investedAmount: 78987,
+    isActive: true,
     investors: [
       {
         profile:
@@ -35,6 +36,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/17919469/pexels-photo-17919469/free-photo-of-a-bull-on-a-grass-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #1",
     investedAmount: 78987,
+    isActive: true,
     investors: [
       {
         profile:
@@ -65,6 +67,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/17919469/pexels-photo-17919469/free-photo-of-a-bull-on-a-grass-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #1",
     investedAmount: 45645,
+    isActive: false,
     investors: [
       {
         profile:
@@ -95,6 +98,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/17919469/pexels-photo-17919469/free-photo-of-a-bull-on-a-grass-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #4",
     investedAmount: 78987,
+    isActive: false,
     investors: [
       {
         profile:
@@ -125,6 +129,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/15172667/pexels-photo-15172667/free-photo-of-man-cleaning-ox.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #2",
     investedAmount: 4654,
+    isActive: true,
     investors: [
       {
         profile:
@@ -155,6 +160,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/17919469/pexels-photo-17919469/free-photo-of-a-bull-on-a-grass-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #3",
     investedAmount: 78987,
+    isActive: true,
     investors: [
       {
         profile:
@@ -185,6 +191,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/5645626/pexels-photo-5645626.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #2",
     investedAmount: 45645,
+    isActive: false,
     investors: [
       {
         profile:
@@ -215,6 +222,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/15172667/pexels-photo-15172667/free-photo-of-man-cleaning-ox.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #1",
     investedAmount: 5454,
+    isActive: true,
     investors: [
       {
         profile:
@@ -245,6 +253,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/5645626/pexels-photo-5645626.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #4",
     investedAmount: 5454,
+    isActive: true,
     investors: [
       {
         profile:
@@ -275,6 +284,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/51950/calf-cow-feast-pasture-51950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #4",
     investedAmount: 78987,
+    isActive: true,
     investors: [
       {
         profile:
@@ -305,6 +315,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/5645626/pexels-photo-5645626.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #3",
     investedAmount: 78987,
+    isActive: true,
     investors: [
       {
         profile:
@@ -335,6 +346,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/51950/calf-cow-feast-pasture-51950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #2",
     investedAmount: 78987,
+    isActive: false,
     investors: [
       {
         profile:
@@ -365,6 +377,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/17919469/pexels-photo-17919469/free-photo-of-a-bull-on-a-grass-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     cawInvestment: "Investment #1",
     investedAmount: 5454,
+    isActive: true,
     investors: [
       {
         profile:
@@ -395,6 +408,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/51950/calf-cow-feast-pasture-51950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #2",
     investedAmount: 4654,
+    isActive: true,
     investors: [
       {
         profile:
@@ -425,6 +439,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/51950/calf-cow-feast-pasture-51950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #1",
     investedAmount: 78987,
+    isActive: false,
     investors: [
       {
         profile:
@@ -455,6 +470,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/15172667/pexels-photo-15172667/free-photo-of-man-cleaning-ox.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #2",
     investedAmount: 45645,
+    isActive: true,
     investors: [
       {
         profile:
@@ -485,6 +501,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/139399/bull-landscape-nature-mammal-139399.jpeg?auto=compress&cs=tinysrgb&w=600",
     cawInvestment: "Investment #3",
     investedAmount: 78987,
+    isActive: false,
     investors: [
       {
         profile:
@@ -515,6 +532,7 @@ export const investedProjectData = [
       "https://images.pexels.com/photos/51950/calf-cow-feast-pasture-51950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     cawInvestment: "Investment #4",
     investedAmount: 45645,
+    isActive: false,
     investors: [
       {
         profile:

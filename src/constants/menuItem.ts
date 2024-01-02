@@ -20,7 +20,7 @@ export const menuItems = [
   {
     label: "Investment",
     key: "investment",
-    href: "/investment",
+    href: "/investment/running",
     // icon: MembersIcon,
   },
   {
