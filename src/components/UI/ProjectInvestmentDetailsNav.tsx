@@ -15,7 +15,7 @@ const ProjectInvestmentDetailsNav = ({ params }: any) => {
 
   const menu = projectInvestemtDetailsNav;
   return (
-    <div className="flex item-center justify-around ">
+    <div className="flex item-center justify-between shadow-lg py-4 rounded-lg ">
       {menu?.map((menuItem: MenuItem) => (
         <nav className="" key={menuItem?.key}>
           <Link
@@ -23,8 +23,8 @@ const ProjectInvestmentDetailsNav = ({ params }: any) => {
             href={menuItem?.href}
             className={`${
               pathName === menuItem.href
-                ? "bg-customColor-100 text-primary  rounded-xl px-5 py-2 font-semibold "
-                : "list-none font-semibold    rounded-xl px-5 py-2"
+                ? "bg-primary text-customColor-100  rounded-xl px-5 py-4 font-semibold "
+                : "list-none font-semibold   py-4 rounded-xl px-5 "
             } `}
           >
             {menuItem?.label}

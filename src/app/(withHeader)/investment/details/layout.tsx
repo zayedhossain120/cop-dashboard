@@ -9,18 +9,18 @@ const InvestmentDetailsLayout = ({
 }) => {
   return (
     <section className="flex justify-between items-center flex-col">
-      <div className="w-full rounded-lg">
+      <div className="w-full rounded-lg pb-4">
         <InvestorDetailsTopArrowbtn />
       </div>
-      <div className="flex justify-center items-center gap-4 shadow-lg rounded-lg">
+      <div className="flex justify-start  gap-4   w-full">
         <div>
           <ProjectInvestmentDetails />
         </div>
-        <div>
-          <div className="flex justify-center items-center flex-col">
+        <div className=" w-full flex  flex-col">
+          <div className="">
             <ProjectInvestmentDetailsNav />
           </div>
-          <div>{children}</div>
+          <div className="w-full shadow-lg h-[100vh]">{children}</div>
         </div>
       </div>
     </section>
