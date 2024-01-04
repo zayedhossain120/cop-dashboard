@@ -11,9 +11,9 @@ const Nav = () => {
 
   const menu = menuItems;
   return (
-    <div className="flex item-center justify-around ">
+    <div className="flex item-center justify-around menu lg:menu-horizontal ">
       {menu?.map((menuItem: MenuItem) => (
-        <nav className="" key={menuItem?.key}>
+        <li className="" key={menuItem?.key}>
           <Link
             scroll={false}
             href={menuItem?.href}
@@ -25,7 +25,7 @@ const Nav = () => {
           >
             {menuItem?.label}
           </Link>
-        </nav>
+        </li>
       ))}
     </div>
   );
