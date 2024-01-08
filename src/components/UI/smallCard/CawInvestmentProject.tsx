@@ -2,7 +2,6 @@
 
 import { IInvestedProjusesDataProps, Investor } from "@/type";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import React from "react";
 
 interface CawInvestmentProject {
@@ -14,7 +13,7 @@ const CawInvestmentProject: React.FC<CawInvestmentProject> = ({ data }) => {
     <div>
       {data.isActive === true && (
         <Link
-          href={`/investment/details/${data?._id}`}
+          href={`/investment/${data?._id}`}
           className="flex items-center justify-center flex-col  shadow-lg rounded-lg gap-4 py-4"
         >
           <img
@@ -53,7 +52,7 @@ const CawInvestmentProject: React.FC<CawInvestmentProject> = ({ data }) => {
       ,
       {data.isActive === false && (
         <Link
-          href={`/investment/details/${data?._id}`}
+          href={`/investment/${data?._id}`}
           className="flex items-center justify-center flex-col  shadow-lg rounded-lg gap-4 py-4"
         >
           <img
