@@ -1,29 +1,38 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { investedProjectData } from "@/utils/data/InvestedProjectData";
+import { IInvestedProjusesDataProps } from "@/type";
+import { get } from "http";
 
-// export async function getInvestedProject(params) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const resultObject = investedProjectData.find(
-//         (item) => item._id === params._id
-//       );
+const InvestmentDetailsPage = ({ params }: { params: { details: string } }) => {
+  const [investedProject, setInvestedProject] =
+    useState<IInvestedProjusesDataProps>();
 
-//       if (resultObject) {
-//         resolve(resultObject);
-//       } else {
-//         reject(`Object not found for ID: ${params}`);
-//       }
-//     }, 500);
-//   });
-// }
-
-const InvestmentDetailsPage = (params: { details: string }) => {
-  // const investedProjectData = getInvestedProject(params);
-  // console.log(investedProjectData);
+  console.log(investedProject, "here is out invested project");
 
   console.log(params.details);
-  return <div></div>;
+
+  useEffect(() => {
+    const getInvestmentData = investedProjectData.find(
+      (investedProject) => investedProject?._id === params.details
+    );
+    if (getInvestmentData) {
+      setInvestedProject(getInvestmentData);
+    } else {
+      console.log("data not found");
+    }
+  }, [params.details]);
+
+  return (
+    <div>
+      <p>{investedProject?.cawInvestment}</p>
+      <p>{investedProject?.investedAmount}</p>
+      <p>{investedProject?.isActive}</p>
+      <p>{investedProject?.registered}</p>
+      <img src={investedProject?.picture} alt="" />{" "}
+    </div>
+  );
 };
 
 export default InvestmentDetailsPage;
