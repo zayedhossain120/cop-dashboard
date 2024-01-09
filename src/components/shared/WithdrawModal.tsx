@@ -15,8 +15,11 @@ const WithdrawModal = () => {
   };
   return (
     <section>
-      <button className="btn" onClick={handleOpenModal}>
-        open modal
+      <button
+        className="bg-transparent text-[#fff] border font-bold px-3 rounded-lg"
+        onClick={handleOpenModal}
+      >
+        Withdraw
       </button>
       {isModalOpen && (
         <div className="modal-overlay">
@@ -27,20 +30,18 @@ const WithdrawModal = () => {
             >
               ✕
             </button>
-            <div>
+            <div className="text-center flex flex-col gap-2">
               <ModalIcon />
-              <h1>Send a withdraw request</h1>
-              <p>
+              <h1 className="font-bold text-2xl ">Send a withdraw request</h1>
+              <p className="font-bold text-xs text-[#000000] opacity-40">
                 Please enter withdrawal amount and click the submit Request
                 button
               </p>
-              <div className="available-balance">
-                <h3 className="text-[18px] font-semibold text-customColor-100">
+              <div className="bg-[#DEEAF5] rounded-lg py-3">
+                <h3 className="font-bold text-xs text-[#000] opacity-70">
                   Available Balance
                 </h3>
-                <h2 className="text-3xl font-bold text-customColor-100">
-                  38274
-                </h2>
+                <h2 className="text-3xl">38274</h2>
               </div>
               <label htmlFor="amount">Amount</label>
               {/* // */}
@@ -49,9 +50,13 @@ const WithdrawModal = () => {
                 <input type="text" placeholder="Enter Amount" />
               </div>
               <p>Remember, You cant withdraw more than available balance.</p>
-              <div>
-                <Button btnText="Cancel" btnType="btn-warning" />
-                <Button btnText="Submit Request" btnType="btn-primary" />
+              <div className="flex gap-5 items-center justify-center">
+                <Button
+                  handleClick={handleCloseModal}
+                  btnText="Cancel"
+                  btnType="btn-warning px-5"
+                />
+                <Button btnText="Submit Request" btnType="btn-primary px-5" />
               </div>
             </div>
           </div>

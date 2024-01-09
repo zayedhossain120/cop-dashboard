@@ -1,6 +1,5 @@
 import React from "react";
 import AmountCard from "../AmountCard";
-import Button from "../Button";
 import WithdrawModal from "@/components/shared/WithdrawModal";
 
 const AvailableBalanceCard = () => {
@@ -20,7 +19,6 @@ const AvailableBalanceCard = () => {
         </div>
         <div>
           <WithdrawModal />
-          <Button btnText="Withdraw" btnType="btn-warning" />
         </div>
       </div>
     </AmountCard>
