@@ -55,11 +55,16 @@ const CawInvestmentProject: React.FC<CawInvestmentProject> = ({ data }) => {
           href={`/investment/${data?._id}`}
           className="flex items-center justify-center flex-col  shadow-lg rounded-lg gap-4 py-4"
         >
-          <img
-            src={data.picture}
-            alt={data.name}
-            className="h-36 w-[90%] rounded-lg object-cover"
-          />
+          <div className="relative w-[90%] ">
+            <img
+              src={data.picture}
+              alt={data.name}
+              className="h-36 w-[100%] rounded-lg object-cover"
+            />
+            <div className="bg-customColor-orange  top-0 left-0 absolute  text-customColor-100 py-2 px-4 rounded-tl-lg rounded-br-lg">
+              Revoked
+            </div>
+          </div>
 
           <p className="font-bold text-textColor">{data?.cawInvestment}</p>
           <small className="font-bold text-customColor-50  px-3 py-1 rounded-lg">

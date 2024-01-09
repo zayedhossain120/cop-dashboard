@@ -11,7 +11,7 @@ const Nav = () => {
 
   const menu = menuItems;
   return (
-    <div className="flex item-center justify-around menu lg:menu-horizontal ">
+    <div className="flex item-center justify-around list-none  ">
       {menu?.map((menuItem: MenuItem) => (
         <li className="" key={menuItem?.key}>
           <Link
