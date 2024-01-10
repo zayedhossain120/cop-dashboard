@@ -11,7 +11,7 @@ const LoginPage = ({ router }: any) => {
     password: "",
   });
   console.log(user);
-  const [buttonDisabled, setButtonDisabled] = React.useState(false);
+
   const [loading, setLoading] = React.useState(false);
 
   const onLogin = async () => {

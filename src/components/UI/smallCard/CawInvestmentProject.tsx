@@ -20,7 +20,9 @@ const CawInvestmentProject: React.FC<CawInvestmentProject> = ({ data }) => {
           <Image
             src={data?.picture || "/default-image.jpg"}
             alt="caw investment project"
-            className="h-36 w-[90%] rounded-lg object-cover"
+            className="w-[90%] rounded-lg object-cover"
+            height="144"
+            width="444"
           />
 
           <p className="font-bold text-textColor">{data?.cawInvestment}</p>
@@ -33,9 +35,11 @@ const CawInvestmentProject: React.FC<CawInvestmentProject> = ({ data }) => {
             {data.investors.map((investor: Investor) => (
               <div className=" " key={investor.profile}>
                 <Image
-                  className=" h-6 w-6 rounded-full"
+                  className="  rounded-full"
                   src={investor?.profile || "/default-image.jpg"}
                   alt="investor profile"
+                  height="24"
+                  width="24"
                 />
               </div>
             ))}
@@ -60,7 +64,9 @@ const CawInvestmentProject: React.FC<CawInvestmentProject> = ({ data }) => {
             <Image
               src={data?.picture || "/default-image.jpg"}
               alt="active investment data picture"
-              className="h-36 w-[100%] rounded-lg object-cover"
+              className=" rounded-lg object-cover"
+              height="144"
+              width="444"
             />
             <div className="bg-customColor-orange  top-0 left-0 absolute  text-customColor-100 py-2 px-4 rounded-tl-lg rounded-br-lg">
               Revoked
@@ -80,6 +86,8 @@ const CawInvestmentProject: React.FC<CawInvestmentProject> = ({ data }) => {
                   className=" h-6 w-6 rounded-full"
                   src={investor?.profile || "/default-image.jpg"}
                   alt="investor profile"
+                  height="24"
+                  width="24"
                 />
               </div>
             ))}

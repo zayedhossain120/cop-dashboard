@@ -13,6 +13,8 @@ const MembersCard: React.FC<MembersCard> = ({ data }) => {
         src={data?.picture || "/default-image.jpg"}
         alt="member profile image"
         className="h-20 w-20 rounded-full object-cover"
+        height="80"
+        width="80"
       />
 
       <p className="font-bold text-textColor">{data?.name}</p>

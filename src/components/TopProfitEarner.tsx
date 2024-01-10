@@ -75,7 +75,9 @@ const TopprofitEarner = () => {
               <Image
                 src={data?.profile}
                 alt="Profile picture"
-                className="h-12 w-12 rounded-full"
+                className="  rounded-full"
+                height="48"
+                width="48"
               />
               <h3 className="text-[18px] font-bold text-textColor">
                 {data?.name}
