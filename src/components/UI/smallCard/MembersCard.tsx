@@ -1,4 +1,5 @@
 import { IMembersDataProps } from "@/type";
+import Image from "next/image";
 import React from "react";
 
 interface MembersCard {
@@ -8,9 +9,9 @@ interface MembersCard {
 const MembersCard: React.FC<MembersCard> = ({ data }) => {
   return (
     <div className="flex items-center justify-center flex-col  shadow-lg rounded-lg gap-4 py-4">
-      <img
-        src={data.picture}
-        alt={data.name}
+      <Image
+        src={data?.picture || "/default-image.jpg"}
+        alt="member profile image"
         className="h-20 w-20 rounded-full object-cover"
       />
 

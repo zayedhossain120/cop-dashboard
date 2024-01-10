@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const TopprofitEarner = () => {
@@ -71,7 +72,7 @@ const TopprofitEarner = () => {
               #{data?.count}
             </div>
             <div className="flex justify-center items-center gap-2">
-              <img
+              <Image
                 src={data?.profile}
                 alt="Profile picture"
                 className="h-12 w-12 rounded-full"

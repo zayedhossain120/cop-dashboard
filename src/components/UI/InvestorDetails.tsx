@@ -1,3 +1,4 @@
+import Image from "next/image";
 import EditIcon from "../svgIcons/EditIcon";
 import TelePhoneIcon from "../svgIcons/TelePhoneIcon";
 
@@ -5,7 +6,7 @@ const InvestorDetails = () => {
   return (
     <section className=" shadow-lg p-4 rounded-lg h-[75vh] ">
       <div className="flex items-center justify-between mb-6">
-        <img
+        <Image
           className="rounded-lg"
           src="https://res.cloudinary.com/dc6deairt/image/upload/v1638102932/user-48-01_nugblk.jpg"
           width="80"

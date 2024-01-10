@@ -1,3 +1,4 @@
+import Image from "next/image";
 import EditIcon from "../svgIcons/EditIcon";
 import TelePhoneIcon from "../svgIcons/TelePhoneIcon";
 
@@ -7,7 +8,7 @@ const ProjectInvestmentDetails = () => {
       <div className=" mb-6">
         <h3 className="font-bold  text-textColor mb-4">Cow Investmet - #1</h3>
 
-        <img
+        <Image
           className="rounded-lg w-full h-[130px] object-cover"
           src="https://images.pexels.com/photos/14297722/pexels-photo-14297722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Lauren Marsano"
@@ -21,7 +22,7 @@ const ProjectInvestmentDetails = () => {
           <span className="text-customColor-50 text-[14px]  font-bold">
             Created by
           </span>
-          <img
+          <Image
             className="rounded-full"
             src="https://images.pexels.com/photos/14297722/pexels-photo-14297722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Lauren Marsano"

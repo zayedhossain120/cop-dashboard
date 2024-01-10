@@ -17,7 +17,7 @@ export interface Investor {
 
 export interface IInvestedProjusesDataProps {
   _id: string;
-  picture: string;
+  picture?: string;
   cawInvestment: string;
   investedAmount: number;
   investors: Investor[];

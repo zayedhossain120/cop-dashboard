@@ -1,13 +1,14 @@
 import React from "react";
 import CallIcon from "../svgIcons/CallIcon";
 import LocationIcon from "../svgIcons/LocationIcon";
+import Image from "next/image";
 
 const IDetailsManager = () => {
   return (
     <>
       <div className="flex items-center justify-start gap-2 p-10  ">
         <div>
-          <img
+          <Image
             className="rounded-lg"
             src="https://images.pexels.com/photos/14297722/pexels-photo-14297722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Lauren Marsano"

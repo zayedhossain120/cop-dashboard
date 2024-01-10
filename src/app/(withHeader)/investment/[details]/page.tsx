@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { investedProjectData } from "@/utils/data/InvestedProjectData";
 import { IInvestedProjusesDataProps } from "@/type";
-import { get } from "http";
+import Image from "next/image";
 
 const InvestmentDetailsPage = ({ params }: { params: { details: string } }) => {
   const [investedProject, setInvestedProject] =
@@ -30,7 +30,12 @@ const InvestmentDetailsPage = ({ params }: { params: { details: string } }) => {
       <p>{investedProject?.investedAmount}</p>
       <p>{investedProject?.isActive}</p>
       <p>{investedProject?.registered}</p>
-      <img src={investedProject?.picture} alt="" />{" "}
+      <Image
+        src={investedProject?.picture || "/default-image.jpg"}
+        width={500}
+        height={500}
+        alt="Picture of the author"
+      />
     </div>
   );
 };
