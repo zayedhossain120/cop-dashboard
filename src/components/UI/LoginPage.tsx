@@ -1,30 +1,23 @@
 "use client";
 import Image from "next/image";
 import LoginImage from "../../../public/loginImage.svg";
-import axios from "axios";
-import React, { useState } from "react";
-import { useRouter } from "next/router";
-const LoginPage = ({ router }: any) => {
-  //   const router = useRouter();
+// import axios from "axios";
+import React from "react";
+import { useRouter } from "next/navigation";
+const LoginPage = () => {
+  const router = useRouter();
   const [user, setUser] = React.useState({
     email: "",
     password: "",
   });
-  console.log(user);
-  const [buttonDisabled, setButtonDisabled] = React.useState(false);
-  const [loading, setLoading] = React.useState(false);
 
-  const onLogin = async () => {
-    try {
-      setLoading(true);
-      const response = await axios.post("/api/users/login", user);
-      console.log("Login success", response.data);
-      console.log(alert("Login successful, Move on"));
+  const onLogin = async (e: any) => {
+    e.preventDefault();
+
+    if (user.email.length > 6 && user.password.length > 0) {
       router.push("/dashboard");
-    } catch (error: any) {
-      console.log("Login failed", error.message);
-    } finally {
-      setLoading(false);
+    } else {
+      console.error("Please fill in both email and password");
     }
   };
 

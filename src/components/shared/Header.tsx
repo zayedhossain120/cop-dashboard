@@ -1,13 +1,17 @@
-import { menuItems } from "@/constants/menuItem";
+"use client";
 import Link from "next/link";
 import React from "react";
 import LogoutIcon from "../svgIcons/LogoutIcon";
 
-import { MenuItem } from "@/type";
-import { usePathname } from "next/navigation";
 import Nav from "../UI/Nav";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+  //signOut function
+  const handleSignOut = () => {
+    router.push("/login");
+  };
   return (
     <header className="flex items-center justify-between py-4">
       <div className="">
@@ -16,7 +20,8 @@ const Header = () => {
         </Link>
       </div>
       <Nav />
-      <button className="btn btn-circle ">
+      <button onClick={handleSignOut} className="btn btn-circle ">
+        {""}
         <LogoutIcon />
       </button>
     </header>
